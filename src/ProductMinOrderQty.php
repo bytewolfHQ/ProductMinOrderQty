@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace BytewolfHQ\ProductMinOrderQty;
+namespace ByteWolfHQ\ProductMinOrderQty;
 
 use Shopware\Core\Framework\Context;
 use Shopware\Core\Framework\DataAbstractionLayer\EntityRepository;
