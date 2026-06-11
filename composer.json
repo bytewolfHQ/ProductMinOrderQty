@@ -1,0 +1,31 @@
+{
+  "name": "bytewolfHQ/product-min-order-qty",
+  "description": "Adds a configurable minimum order quantity per product with storefront validation.",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "WolfgangT",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "shopware/core": "~6.7.0"
+  },
+  "extra": {
+    "shopware-plugin-class": "BytewolfHQ\\ProductMinOrderQty\\ProductMinOrderQty",
+    "label": {
+      "de-DE": "Mindestbestellmenge pro Produkt",
+      "en-GB": "Minimum order quantity per product"
+    },
+    "description": {
+      "de-DE": "Definiert eine Mindestbestellmenge pro Produkt und blockiert den Checkout bei Unterschreitung.",
+      "en-GB": "Defines a minimum order quantity per product and blocks the checkout if it is not met."
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "BytewolfHQ\\ProductMinOrderQty\\": "src/"
+    }
+  }
+}

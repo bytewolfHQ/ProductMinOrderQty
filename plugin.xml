@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/trunk/src/Core/Framework/Plugin/Manifest/Schema/plugin.xsd">
+    <meta>
+        <name>ProductMinOrderQty</name>
+        <label lang="de-DE">Mindestbestellmenge pro Produkt</label>
+        <label lang="en-GB">Minimum Order Quantity per Product</label>
+        <description lang="de-DE">Definiert eine Mindestbestellmenge pro Produkt und blockiert den Checkout bei Unterschreitung.</description>
+        <description lang="en-GB">Defines a minimum order quantity per product and blocks the checkout if it is not met.</description>
+        <version>1.0.0</version>
+        <license>MIT</license>
+    </meta>
+    <compatibility>
+        <shopware minVersion="6.7.0" maxVersion="6.7.99" />
+    </compatibility>
+</plugin>
