@@ -13,7 +13,7 @@
     "shopware/core": "~6.7.0"
   },
   "extra": {
-    "shopware-plugin-class": "BytewolfHQ\\ProductMinOrderQty\\ProductMinOrderQty",
+    "shopware-plugin-class": "ByteWolfHQ\\ProductMinOrderQty\\ProductMinOrderQty",
     "label": {
       "de-DE": "Mindestbestellmenge pro Produkt",
       "en-GB": "Minimum order quantity per product"
@@ -25,7 +25,7 @@
   },
   "autoload": {
     "psr-4": {
-      "BytewolfHQ\\ProductMinOrderQty\\": "src/"
+      "ByteWolfHQ\\ProductMinOrderQty\\": "src/"
     }
   }
 }
