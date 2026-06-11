@@ -1,5 +1,5 @@
 {
-  "name": "bytewolfHQ/product-min-order-qty",
+  "name": "bytewolfhq/product-min-order-qty",
   "description": "Adds a configurable minimum order quantity per product with storefront validation.",
   "type": "shopware-platform-plugin",
   "license": "MIT",
