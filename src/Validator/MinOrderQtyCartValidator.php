@@ -5,6 +5,7 @@ namespace ByteWolfHQ\ProductMinOrderQty\Validator;
 use Shopware\Core\Checkout\Cart\Cart;
 use Shopware\Core\Checkout\Cart\CartValidatorInterface;
 use Shopware\Core\Checkout\Cart\Error\ErrorCollection;
+use Shopware\Core\Checkout\Cart\LineItem\LineItem;
 use Shopware\Core\System\SalesChannel\SalesChannelContext;
 
 class MinOrderQtyCartValidator implements CartValidatorInterface
@@ -30,7 +31,7 @@ class MinOrderQtyCartValidator implements CartValidatorInterface
 
             $currentQty = (int) $lineItem->getQuantity();
 
-            if ($currentQty >= $minQty) {
+            if ($currentQty < $minQty) {
                 $errors->add(new MinOrderQtyError(
                     $lineItem->getLabel() ?? $lineItem->getId(),
                     $minQty,
