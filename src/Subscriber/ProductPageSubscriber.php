@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace BytewolfHQ\ProductMinOrderQty\Subscriber;
+namespace ByteWolfHQ\ProductMinOrderQty\Subscriber;
 
 use Shopware\Core\Framework\DataAbstractionLayer\EntityRepository;
 use Shopware\Storefront\Page\Product\ProductPageLoadedEvent;
