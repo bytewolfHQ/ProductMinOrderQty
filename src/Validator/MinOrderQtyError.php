@@ -1,5 +1,4 @@
-<?php
-declare(strict_types=1);
+<?php declare(strict_types=1);
 
 namespace ByteWolfHQ\ProductMinOrderQty\Validator;
 
@@ -15,7 +14,13 @@ class MinOrderQtyError extends Error
         private readonly int $currentQty
     )
     {
-        parent::__construct();
+        $message = sprintf(
+            'Product "%s" requires a minimum order quantity of %d. Current quantity: %d',
+            $productName,
+            $minQty,
+            $currentQty
+        );
+        parent::__construct($message);
     }
 
     public function getId(): string

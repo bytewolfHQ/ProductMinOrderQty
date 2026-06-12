@@ -14,10 +14,6 @@
             <tag name="shopware.cart.validator"/>
         </service>
 
-        <service id="ByteWolfHQ\ProductMinOrderQty\Subscriber\CartLineItemSubscriber">
-            <tag name="kernel.event_subscriber"/>
-        </service>
-
     </services>
 
 </container>
