@@ -2,18 +2,13 @@
 
 namespace ByteWolfHQ\ProductMinOrderQty\Subscriber;
 
-use Shopware\Core\Framework\DataAbstractionLayer\EntityRepository;
 use Shopware\Storefront\Page\Product\ProductPageLoadedEvent;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 class ProductPageSubscriber implements EventSubscriberInterface {
     private const CUSTOM_FIELD_NAME = 'bytewolfhq_min_order_qty';
 
-    public function __construct(
-        private readonly EntityRepository $productRepository
-    )
-    {
-    }
+    public function __construct() {}
 
     public static function getSubscribedEvents(): array
     {
