@@ -32,14 +32,12 @@ class MinOrderQtyCartValidator implements CartValidatorInterface
             $currentQty = (int) $lineItem->getQuantity();
 
             if ($currentQty < $minQty) {
-                $cart->getErrors()->add(new MinOrderQtyError(
+                $errors->add(new MinOrderQtyError(
                     $lineItem->getLabel() ?? $lineItem->getId(),
                     $minQty,
                     $currentQty
                 ));
             }
         }
-
-        dd($cart->getErrors());
     }
 }
