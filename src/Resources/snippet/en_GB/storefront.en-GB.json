@@ -1,0 +1,5 @@
+{
+  "checkout": {
+    "min-order-qty-not-reached": "The product \"%productName%\" requires a minimum order quantity of %minQty%. Current quantity in cart: %currentQty%."
+  }
+}
