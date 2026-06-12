@@ -23,22 +23,23 @@ class MinOrderQtyCartValidator implements CartValidatorInterface
             }
 
             $payload = $lineItem->getPayload();
-            dd($payload);
-//            $minQty = (int) ($payload['customFields'][self::CUSTOM_FIELD_NAME] ?? 0);
-//
-//            if ($minQty <= 0) {
-//                continue;
-//            }
-//
-//            $currentQty = (int) $lineItem->getQuantity();
-//
-//            if ($currentQty < $minQty) {
-//                $errors->add(new MinOrderQtyError(
-//                    $lineItem->getLabel() ?? $lineItem->getId(),
-//                    $minQty,
-//                    $currentQty
-//                ));
-//            }
+            $minQty = (int) ($payload['customFields'][self::CUSTOM_FIELD_NAME] ?? 0);
+
+            if ($minQty <= 0) {
+                continue;
+            }
+
+            $currentQty = (int) $lineItem->getQuantity();
+
+            if ($currentQty < $minQty) {
+                $errors->add(new MinOrderQtyError(
+                    $lineItem->getLabel() ?? $lineItem->getId(),
+                    $minQty,
+                    $currentQty
+                ));
+            }
         }
+
+        dd($cart->getErrors());
     }
 }
