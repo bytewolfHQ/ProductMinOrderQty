@@ -1,0 +1,5 @@
+{
+  "checkout": {
+    "min-order-qty-not-reached": "Das Produkt \"%productName%\" erfordert eine Mindestbestellmenge von %minQty% Stück. Aktuell im Warenkorb: %currentQty% Stück."
+  }
+}
